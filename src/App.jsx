@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import ToDo from './todo'
+import Cook from './cook'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,7 +12,11 @@ function App() {
     <>
       
       <h1>React core concepts</h1>
-      <Person></Person>
+      <Cook isHungry={true}></Cook>
+      <Cook isHungry={false}></Cook>
+      <ToDo task="Learn React" isDone={true}></ToDo>
+      <ToDo task="Revise JS" isDone={false}></ToDo>
+      {/*<Person></Person>
       <Person></Person>
       <Sports></Sports>
       <Student></Student>
@@ -24,7 +30,7 @@ function App() {
       <Salami event="Passed In Exam" amount="2000"></Salami>
       <Salami event="Eid Salami"></Salami>
       <Book Name="পদ্দজা" price="৭৫০ টাকা"></Book>
-      <Book Name="পথের পাচালি" price="৫৫০ টাকা"></Book>
+      <Book Name="পথের পাচালি" price="৫৫০ টাকা"></Book>*/}
 
     </>
   )
